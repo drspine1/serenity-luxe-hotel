@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-container{
+  background-image:linear-gradient(rgba(47, 12, 66, 0.9),rgba(38, 10, 55, 0.9)),url("/images/contactme.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+ 
+  }
+
+
+  @keyframes moveWave {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25%) translateY(-25%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 200px;
+  background-repeat: repeat;
+  background-size: 50% 100%;
+  opacity: 0.3;
+  animation: moveWave 12s ease-in-out infinite;
+  bottom: 0;
+}
+
+.wave1 {
+  background-image: radial-gradient(circle at 50% 50%, #ff7b02 20%, transparent 20%);
+  animation-delay: 0s;
+  opacity: 0.25;
+}
+
+.wave2 {
+  background-image: radial-gradient(circle at 50% 50%, #e5a55d 20%, transparent 20%);
+  animation-delay: 2s;
+  opacity: 0.3;
+}
+
+.wave3 {
+  background-image: radial-gradient(circle at 50% 50%, #d0b8c0 20%, transparent 20%);
+  animation-delay: 4s;
+  opacity: 0.15;
+}
