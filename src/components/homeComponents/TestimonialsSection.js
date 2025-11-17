@@ -51,14 +51,23 @@ export default function TestimonialsSection() {
       </h2>
 
       <div
-        className="overflow-hidden group"
-        onMouseEnter={() => controls.stop()}
-        onMouseLeave={() =>
-          controls.start({
-            x: ["0%", "-50%"],
-            transition: { duration: 20, ease: "linear", repeat: Infinity },
-          })
-        }
+     className="overflow-hidden group"
+  onMouseEnter={() => controls.stop()}
+  onMouseLeave={() =>
+    controls.start({
+      x: ["0%", "-50%"],
+      transition: { duration: 20, ease: "linear", repeat: Infinity },
+    })
+  }
+
+  // 👉 MOBILE EVENTS
+  onTouchStart={() => controls.stop()}
+  onTouchEnd={() =>
+    controls.start({
+      x: ["0%", "-50%"],
+      transition: { duration: 20, ease: "linear", repeat: Infinity },
+    })
+  }
       >
         <motion.div
           className="flex gap-8 w-[200%]"
