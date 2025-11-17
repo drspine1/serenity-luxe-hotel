@@ -18,7 +18,7 @@ export default function HeroSection() {
           Experience timeless elegance surrounded by nature. Your comfort, our passion.
         </p>
         <Link href="/rooms">
-          <button  className="bg-[#ff7b02] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#e56f00] transition">book your stay</button>
+          <button  className="bg-[#ff7b02] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#e56f00] transition capitalize">book your stay</button>
         </Link>
       </motion.div>
 

@@ -80,7 +80,7 @@ export default function PaymentSuccessContent () {
         </Link>
         <Link
           href="/booking-details"
-          className="mt-8 inline-block bg-[orangered] text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all duration-300"
+          className="mt-8 inline-block bg-[orangered] text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all duration-300 capitalize"
         >
           booking details
         </Link>
