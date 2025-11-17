@@ -77,7 +77,7 @@ const AmenityCard = ({ item }) => {
 
       {/* Text */}
       <div className="flex-[50%] px-5">
-        <h2 className="font-semibold text-xl pb-3 capitalize">{item.title}</h2>
+        <h2 className="font-semibold text-xl pb-3 capitalize text-gray-800">{item.title}</h2>
         {item.price.toLowerCase() === "free" ? (
           <p className="uppercase text-lg font-semibold text-[orangered] pb-4">
             {item.price}

@@ -309,7 +309,7 @@ export default function BookingModal({ room, onClose }) {
             name="checkIn"
             value={formData.checkIn}
             onChange={handleChange}
-            className="w-full border p-2 rounded-lg text-gray-700"
+            className="w-full border p-2 rounded-lg text-gray-900"
           />
 
           <label className="block text-sm font-medium text-gray-700">Check-Out</label>
@@ -318,7 +318,7 @@ export default function BookingModal({ room, onClose }) {
             name="checkOut"
             value={formData.checkOut}
             onChange={handleChange}
-            className="w-full border p-2 rounded-lg text-gray-700"
+            className="w-full border p-2 rounded-lg text-gray-900"
           />
 
           <label className="block text-sm font-medium text-gray-700">Guests</label>
@@ -328,7 +328,7 @@ export default function BookingModal({ room, onClose }) {
             value={formData.guests}
             onChange={handleChange}
             min={1}
-            className="w-full border p-2 rounded-lg text-gray-700"
+            className="w-full border p-2 rounded-lg text-gray-900"
           />
 
           {nights > 0 && (
