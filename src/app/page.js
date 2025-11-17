@@ -22,7 +22,7 @@ export default function Home() {
       </div>
          </nav>
         <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-purple-900 via-amber-700 to-green-500 opacity-70" animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"], }} transition={{ duration: 10, repeat: "infinity", ease: "linear", }} style={{ backgroundSize: "200% 200%", }} />
+            className="absolute inset-0 bg-gradient-to-r from-purple-700 via-amber-300 to-green-300 opacity-70" animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"], }} transition={{ duration: 10, repeat:"infinity", ease: "linear", }} style={{ backgroundSize: "200% 200%", }} />
      <div className="relative z-10 flex flex-col justify-center items-center h-screen  text-white text-center p-6">
        <h1 className="text-4xl md:text-5xl font-bold mb-6">Welcome to Delux<span className="text-amber-800">haven</span> Hotel </h1>
       <p className="max-w-xl text-lg text-gray-200 mb-10">

@@ -56,7 +56,7 @@ const [bookings, setBookings] = useState([]);
   if (loading) return <p className="text-center mt-20">Loading your bookings...</p>;
 
   return (
-    <div className="min-h-[50vh] bg-white pt-16 px-6 mt-10">
+    <div className="min-h-[50vh] bg-white pt-16 p-6 pb-10 mt-10 ">
       <h1 className="text-3xl font-bold text-center text-purple-700 mb-8">
         My Bookings
       </h1>
@@ -93,12 +93,12 @@ const [bookings, setBookings] = useState([]);
               <h2 className="text-xl font-semibold text-purple-700 pb-3">
                 {booking.roomName}
               </h2>
-              <p><strong>Booking Ref:</strong> {booking.bookingRef}</p>
-              <p ><strong>Status:</strong><span className="text-green-500 font-semibold">{booking.status}</span></p>
-              <p><strong>Check-In:</strong> {booking.checkIn}</p>
-              <p><strong>Check-Out:</strong> {booking.checkOut}</p>
-              <p><strong>Guests:</strong> {booking.guests}</p>
-              <p><strong>Total:</strong> ${booking.totalPrice}</p>
+              <p className="text-gray-800"><strong>Booking Ref:</strong> <span className="text-gray-700">{booking.bookingRef}</span></p>
+              <p className="text-gray-800" ><strong>Status:</strong><span className="text-green-500 font-semibold">{booking.status}</span></p>
+              <p className="text-gray-800"><strong>Check-In:</strong> <span className="text-gray-700">{booking.checkIn}</span></p>
+              <p className="text-gray-800"><strong>Check-Out:</strong> <span className="text-gray-700"> {booking.checkOut}</span></p>
+              <p className="text-gray-800"><strong>Guests:</strong> <span className="text-gray-700"> {booking.guests}</span></p>
+              <p className="text-gray-800"><strong>Total:</strong> <span className="text-gray-700"> ${booking.totalPrice}</span></p>
                <button className="flex justify-end bg-[orangered] text-white mt-4 uppercase font-medium hover:opacity-90 p-1 px-2 rounded-lg"
                onClick={() => handleDelete(booking)}
 

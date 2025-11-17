@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutPreview() {
   return (
-    <section className="py-20 bg-[#e5a55d]/10 text-center  pt-40">
+    <section className="py-20 bg-purple-200 md:bg-[#e5a55d]/10 text-center  pt-40">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

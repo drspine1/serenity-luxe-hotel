@@ -59,7 +59,7 @@ export default function RoomsSection() {
     
       
        <section className="py-12 px-6 bg-gray-50 pt-40">
-      <h2 className="text-3xl font-semibold text-center mb-10">Our Rooms</h2>
+      <h2 className="text-3xl font-semibold text-center mb-10 text-gray-800">Our Rooms</h2>
      {
        isLoading ? (
         <p className="text-center">Loading rooms...</p>
@@ -79,15 +79,15 @@ export default function RoomsSection() {
               className="w-full h-56 object-cover"
             />
             <div className="p-5 space-y-3">
-              <h3 className="text-xl font-bold">{room.name}</h3>
-              <p className="text-gray-500">{room.type}</p>
+              <h3 className="text-xl font-bold text-gray-700">{room.name}</h3>
+              <p className="text-gray-500 font-semibold">{room.type}</p>
               <div className="flex items-center gap-1 text-yellow-500">
                 <FaStar />
                 <span>{room.rating}</span>
               </div>
-              <p className="text-gray-700 text-sm">{room.description}</p>
+              <p className="text-gray-700 text-sm ">{room.description}</p>
               <div className="flex justify-between items-center mt-4">
-                <span className="font-semibold text-lg">${room.price}/night</span>
+                <span className="font-bold text-lg text-gray-700">${room.price}/night</span>
                 <button
                   onClick={() => handleBookNow(room)}
                   className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"

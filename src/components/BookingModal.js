@@ -298,12 +298,12 @@ export default function BookingModal({ room, onClose }) {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
       >
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="text-xl font-semibold mb-4 text-gray-800">
           Book {room.name} - ${room.price}/night
         </h2>
 
         <div className="space-y-3">
-          <label className="block text-sm font-medium">Check-In</label>
+          <label className="block text-sm font-medium text-gray-700">Check-In</label>
           <input
             type="date"
             name="checkIn"
@@ -312,7 +312,7 @@ export default function BookingModal({ room, onClose }) {
             className="w-full border p-2 rounded-lg"
           />
 
-          <label className="block text-sm font-medium">Check-Out</label>
+          <label className="block text-sm font-medium text-gray-700">Check-Out</label>
           <input
             type="date"
             name="checkOut"
@@ -321,14 +321,14 @@ export default function BookingModal({ room, onClose }) {
             className="w-full border p-2 rounded-lg"
           />
 
-          <label className="block text-sm font-medium">Guests</label>
+          <label className="block text-sm font-medium text-gray-700">Guests</label>
           <input
             type="number"
             name="guests"
             value={formData.guests}
             onChange={handleChange}
             min={1}
-            className="w-full border p-2 rounded-lg"
+            className="w-full border p-2 rounded-lg placeholder:text-gray-600"
           />
 
           {nights > 0 && (
