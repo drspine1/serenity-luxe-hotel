@@ -1,25 +1,4 @@
-// import { SignIn } from "@clerk/nextjs";
 
-// export default function Page() {
-//   return (
-//     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#25003c] to-[#12001f]">
-//       <div className="bg-white/10 backdrop-blur-lg p-8 rounded-xl shadow-lg">
-//         <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
-//       </div>
-//     </div>
-//   );
-// }
-// import { SignUp } from "@clerk/nextjs";
-
-// export default function Page() {
-//   return (
-//     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#25003c] to-[#12001f]">
-//       <div className="bg-white/10 backdrop-blur-lg p-8 rounded-xl shadow-lg">
-//         <SignUp path="/sign-up" routing="path" signInUrl="/sign-in" />
-//       </div>
-//     </div>
-//   );
-// }
 
 "use client";
 import { SignIn } from "@clerk/nextjs";

@@ -13,7 +13,7 @@ export default function MyBookingsPage() {
   const [showModal, setShowModal] = useState(false);
   const [selectedBooking, setSelectedBooking] = useState(null);
 const [bookings, setBookings] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
 
   //function to handle delete button click
@@ -42,6 +42,7 @@ const [bookings, setBookings] = useState([]);
   };
 
   useEffect(() => {
+    setLoading(true)
     const fetchBookings = async () => {
       if (!user) return;
       const res = await fetch(`/api/bookings/user/${user.id}`);
