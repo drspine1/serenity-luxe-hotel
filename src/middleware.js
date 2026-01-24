@@ -8,6 +8,7 @@ const isPublicRoute = createRouteMatcher([
 ]);
 
 export default clerkMiddleware(async (auth, req) => {
+   
   // protect all non-public routes
   if (!isPublicRoute(req)) {
     await auth.protect(); // <-- server-safe redirect to Clerk sign-in
